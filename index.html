@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Buckingham Palace - London</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%; 
+            height: 0;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .hero-bg {
+            background-image: url('https://cmsadmin.rct.uk/sites/default/files/styles/rctr_scale_crop_1920_750/public/bp-1600.jpg.webp?itok=IfQ2ii5C');
+            background-size: cover;
+            background-position: center center;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 font-sans leading-relaxed text-slate-800">
+
+    <header class="hero-bg text-white relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-6 py-24 md:py-32 text-center relative z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Buckingham Palace</h1>
+            <p class="text-lg md:text-xl text-slate-200">Experience the heart of British monarchy in London.</p>
+            <a href="#visitor-info" class="mt-8 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300">
+                Plan Your Visit
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-8">
+
+        <section id="about" class="mb-12 md:mb-16 bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl md:text-3xl font-semibold text-slate-700 mb-6 border-b pb-3">About the Palace</h2>
+            <div class="space-y-4 text-slate-600">
+                <p>Buckingham Palace has stood as the official London residence of the UK's sovereigns since 1837. Today, it serves as the administrative headquarters of the Monarch and hosts numerous official events and receptions.</p>
+                <p>The Palace boasts an impressive 775 rooms, including 19 State Rooms, 52 Royal and guest bedrooms, 188 staff bedrooms, 92 offices, and 78 bathrooms. Its grand scale is evident in its dimensions: 108 metres wide at the front, 120 metres deep, and 24 metres high.</p>
+                <p>Located centrally in the City of Westminster, London, the State Rooms are open to visitors for guided tours each summer, offering a glimpse into the Royal Collection's treasures.</p>
+            </div>
+        </section>
+
+        <section id="visitor-info" class="mb-12 md:mb-16 bg-indigo-600 p-6 md:p-8 rounded-lg shadow-lg text-indigo-50">
+            <h2 class="text-2xl md:text-3xl font-semibold text-white mb-6 border-b border-indigo-400 pb-3">Visiting the State Rooms (Summer Opening)</h2>
+            <div class="space-y-4">
+                <p>Explore the magnificent State Rooms during the summer, lavishly furnished with priceless items from the Royal Collection.</p>
+
+                <h3 class="text-xl font-semibold text-white pt-4 mb-2">Ticket Information (Example Prices)</h3>
+                <p class="italic text-sm text-indigo-200 mb-3">Please verify current dates, times, and prices on the official Royal Collection Trust website before your visit. Information below is illustrative.</p>
+                <ul class="list-disc list-inside space-y-1 mb-4">
+                    <li>Adult: £30.00</li>
+                    <li>Young Person (18-24): £19.50</li>
+                    <li>Child (5-17): £16.50</li>
+                    <li>Under 5: Free</li>
+                    </ul>
+                <p>Advance booking online is typically required.</p>
+                <a href="https://www.rct.uk/visit/buckingham-palace" target="_blank" rel="noopener noreferrer" class="mt-4 inline-block bg-white hover:bg-indigo-100 text-indigo-700 font-semibold py-2 px-5 rounded-lg shadow-sm transition duration-300">
+                    Check Official Website & Book Tickets
+                </a>
+            </div>
+        </section>
+
+        <section id="location" class="mb-12 md:mb-16 bg-white p-6 md:p-8 rounded-lg shadow-lg">
+            <h2 class="text-2xl md:text-3xl font-semibold text-slate-700 mb-6 border-b pb-3">Location & Getting There</h2>
+            <p class="text-slate-600 mb-6">Buckingham Palace is situated in the City of Westminster, London SW1A 1AA.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Map View</h3>
+                    <div class="map-container rounded-lg overflow-hidden shadow-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.640150758017!2d-0.14407862381138316!3d51.50136391111184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1sen!2suk!4v16788865 BuckinghamPalaceEmbedCodePlaceholder"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-slate-700 mb-4">Street View</h3>
+                    <div class="map-container rounded-lg overflow-hidden shadow-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!4v1714253200899!6m8!1m7!1sCAoSLEFGMVFpcE1iY196UjV2V2k3d1l4Y0t2c29tZ19XQ0t6V194V05Ld1Fp!2m2!1d51.501397!2d-0.141851!3f284.54!4f0!5f0.7820865974627469"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <p class="text-slate-600 mt-6">Use the interactive maps above to explore the palace's surroundings and plan your route.</p>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-slate-300 py-8 mt-12 md:mt-16">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Buckingham Palace Visitor Information (Fictional representation for demonstration purposes).</p>
+        </div>
+    </footer>
+
+</body>
+</html>
